@@ -10,7 +10,7 @@ export default async function Navbar() {
 
     return (
         <nav className="flex justify-between items-center py-3 px-4 bg-white shadow-md">
-        <Link href="/" className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold text-zinc-950">
           Auth.js
         </Link>
         {!session ? (
