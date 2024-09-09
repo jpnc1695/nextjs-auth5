@@ -21,7 +21,7 @@ import LoadingButton from "@/components/loading-button";
 import {
   handleCredentialsSignin,
   handleGithubSignin,
-} from "@/app/actions/authActions"
+} from "@/app/actions/authActions";
 import { useState } from "react";
 import ErrorMessage from "@/components/error-message";
 import { Button } from "@/components/ui/button";
@@ -97,7 +97,9 @@ export default function SignIn() {
               />
 
               {/* Submit button will go here */}
-              <LoadingButton pending={form.formState.isSubmitting} />
+              <LoadingButton pending={form.formState.isSubmitting}>
+                Sign in
+              </LoadingButton>
             </form>
           </Form>
 
